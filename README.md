@@ -40,3 +40,4 @@ Here are a few things to note when using the plugin:
 - You can chain these definitions in a single stroke. For instance, `"{:rpn_clear_buff}{:rpn_dup}{:rpn_put:2}{:rpn_mul}"` will let you repeatedly add double the topmost item onto the stack.
 - When the stack has exactly one item, it will be formatted as a bare number, allowing you to quickly move on after calculation.
 - You can use the undo stroke (Typically `*`) to undo all RPN commands. This is helpful whenever you encounter an error during calculation.
+- Most operations that pop from the stack will push whatever you have in the buffer onto the stack first before popping. This allows you to, for example, use `{:rpn_add}` to directly add the buffer to the item at the top of the stack, without the need to stroke the `rpn_push` command.
