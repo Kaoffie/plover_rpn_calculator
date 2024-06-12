@@ -16,16 +16,16 @@
 | `{:rpn_push}` | Parse and push buffer into stack. |
 | `{:rpn_push_bin}` | Parse and push buffer into stack as binary. |
 | `{:rpn_push_hex}` | Parse and push buffer into stack as hexadecimal. |
-| `{:rpn_add}` | Pop `(x, y)` from stack (where `y` is at the top) and push `x + y`. |
+| `{:rpn_add}` | Addition: Pop `(x, y)` from stack (where `y` is at the top) and push `x + y`. |
 | `{:rpn_sub}` | Subtraction: Pop `(x, y)`, push `x - y`. |
 | `{:rpn_mul}` | Multiplication: Pop `(x, y)`, push `x * y`. |
 | `{:rpn_div}` | Division: Pop `(x, y)`, push `x / y`. |
-| `{:rpn_intdiv}` | Floor division: Pop `(x, y)`, push `floor(x, y)`. |
+| `{:rpn_intdiv}` | Floor division: Pop `(x, y)`, push `floor(x / y)`. |
 | `{:rpn_mod}` | Modulo: Pop `(x, y)`, push `x mod y`. |
 | `{:rpn_pow}` | Exponent: Pop `(x, y)`, push `pow(x, y)`. |
 | `{:rpn_neg}` | Negation: Pop `x`, push `-x`. |
 | `{:rpn_and}` | Bitwise AND: Pop `(x, y)`, push `x & y`. |
-| `{:rpn_or}` | Bitwise OR: Pop `(x, y)`, push `x | y`. |
+| `{:rpn_or}` | Bitwise OR: Pop `(x, y)`, push `x \| y`. |
 | `{:rpn_xor}` | Bitwise XOR: Pop `(x, y)`, push `x ^ y`. |
 | `{:rpn_not}` | Bitwise NOT: Pop `x`, push `~x`. |
 | `{:rpn_lsl}` | Logical Shift Left: Pop `(x, y)`, push `x << y`. |
